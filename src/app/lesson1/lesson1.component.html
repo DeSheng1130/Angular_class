@@ -1,0 +1,4 @@
+tw:<input type="number" [(ngModel)] = "tw" (ngModelChange)="twMoneyChange.emit($event)">
+
+<p>us:{{ tw * 30 }}</p>
+<p>jp:{{ tw / 5 }}</p>

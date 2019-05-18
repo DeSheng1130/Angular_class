@@ -1,0 +1,16 @@
+中文:
+<input type="text" [(ngModel)]="chiName" ><br>
+英文:
+<input type="text" [(ngModel)]="engName" ><br>
+<button (click)="saveName()">送出</button><br>
+
+<table>
+    <tr *ngIf="show">
+        <th>中文</th>
+        <th>英文</th>
+    </tr>
+    <tr *ngFor="let item of nameList;">
+        <td>{{item.chiName}}</td>
+        <td>{{item.engName}}</td>
+    </tr>
+</table>

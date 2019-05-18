@@ -1,0 +1,7 @@
+<input type="number" [(ngModel)]="score">
+<div *ngIf="score >= 60">
+    好棒棒喔!
+</div>
+<div *ngIf="60 > score">
+    好笨!
+</div>
